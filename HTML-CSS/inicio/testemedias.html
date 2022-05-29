@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(238, 235, 235);
+        }
+        .social-menu ul{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            padding: 0;
+            margin: 0;
+            transform: translate(-5%,-5%);
+            display: flex;
+        }
+        .social-menu ul li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        .social-menu ul li .fa{
+            font-size: 30px;
+            line-height: 40px;
+            transition: 6s;
+            -webkit-transition: .6s;
+            color:#000;
+            
+        }
+        .social-menu ul li .fa:hover{
+            color: #fff;
+        }
+        .social-menu ul li a{
+            position: relative;
+            display: block;
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            background-color: #fff;
+            text-align: center;
+            transition: .6s;
+            -webkit-transition: .6s;
+            box-shadow: 0 5px 4px grey;
+            
+        }
+        .social-menu ul li a:hover{
+            transform: translate(0,-10px);
+
+        }
+        .social-menu ul li:nth-child(1) a:hover{
+            background-color: #3b5999;
+        }
+        .social-menu ul li:nth-child(2) a:hover{
+            background-color: #55acee;
+        }
+        .social-menu ul li:nth-child(3) a:hover{
+            background-color: #e4405f;
+        }
+        .social-menu ul li:nth-child(4) a:hover{
+            background-color: yellow;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="social-menu">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>

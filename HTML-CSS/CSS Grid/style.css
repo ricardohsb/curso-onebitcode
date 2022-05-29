@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+.container{
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+.item{
+    height: 200px;
+    background-color: #bbb;
+    border: 1px solid black;
+}

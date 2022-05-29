@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/scripts.js"></script>
+
+</head>
+<body>
+    <form>
+    <p>
+    <select name="type">
+        <option value="apto">Apartamento</option>
+        <option value="casa">Casa</option>
+        </select>
+    </p>
+    <p>
+        <label>Área:</label>
+        <input type="text" name="area">
+    </p>
+    <p>
+        <select name="status">
+            <option value="alugado">Alugado</option>
+            <option value="disponivel">Disponivel</option>
+        </select>
+    </p>
+    <p>
+        <input type="button" value="cadastrar" onclick="cadastrar()">
+    </p>
+    </form>
+    <ul id="cadastro-lista">
+
+    </ul>
+        <p id="message">
+            <p>
+</body>
+</html>
