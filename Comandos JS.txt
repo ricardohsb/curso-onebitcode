@@ -1,0 +1,32 @@
+Para -> string
+n.toString()
+String(n)
+s.lenght // quantos carecteres a string tem
+s.toUpperCase() // jogar tudo pra MAIUSCULO
+s.toLowerCase() //tudo pra minusculo
+
+
+para Numero
+var n1 = Number(window.prompt('Digite um número!'))
+Number.parseInt(n) //Converter para Inteiro
+Number.parseFloat(n)// Converter para Float
+Number(n) //Converter para Número
+n1.toFixed(2) // Aumentar casas decimais
+n1.replace('.',',') // trocar . por ,	
+n.toLocaleString('pt-BR',{style:'currency',currency: 'BRL'}) // Converter moedas
+
+window.prompt('...') - Entrar dados
+window.alert('...') - Alerta window
+window.confirm('...') - janela com OK ou Calcelar.
+
+<br/> //no final, quebra linha
+
+<strong> </strong> // maiusculo
+
+.push(‘elemento-para-adicionar’) - adiciona o elemento no final do array
+.unshift(‘elemento-para-adicionar’) - adiciona o elemento no início do array
+.pop() - remove o último elemento do array
+.shift() - remove o primeiro elemento do array
+.indexOf(‘item-do-array’) - retorna a posição do item procurado no array, caso ele não encontre ele irá retornar o valor -1
+.splice(index, qtd,"novos") - remove e adiciona novos
+.slice(begin, end) - divide sem alterar o original
