@@ -1,0 +1,93 @@
+#dv-jogo{
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+
+}
+#div-centralizar{
+    width: 50vw;
+    height: 50vh;
+    background: gainsboro;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.posJogo{
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    
+    
+}
+.btn{
+    width: 70px;
+    height: 35px;
+    background-color: #7ebdbe;
+    font-size: large;
+    font-style: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color:  #4d9192;
+    box-shadow: 0 7px 7px grey;
+
+}
+.btn:active{
+    background-color: #3a6969;
+    box-shadow: 0 2px 2px grey;
+}
+#p1 {
+    
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#p2{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;    
+    border-right: 1px solid black;
+}
+#p3{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#p4 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+#p5{
+    border: 1px solid black;
+}
+#p6{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+#p7{
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+
+}
+#p8{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+#p9{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}

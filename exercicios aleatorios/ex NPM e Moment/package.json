@@ -1,0 +1,20 @@
+{
+  "name": "ex-npm-e-moment",
+  "version": "1.0.0",
+  "description": "pacote moment node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "json",
+    "moment",
+    "study"
+  ],
+  "author": "ricardo henrique",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.3"
+  }
+}
