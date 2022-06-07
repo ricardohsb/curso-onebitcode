@@ -120,6 +120,7 @@ function verificaVitoria(){
     return ""
 }
 function iniciar(){
+
     jogando = true
     jogadaCpu = 1
     jogo = [
@@ -131,8 +132,18 @@ function iniciar(){
         [document.getElementById('p1'),document.getElementById('p2'),document.getElementById('p3')],
         [document.getElementById('p4'),document.getElementById('p5'),document.getElementById('p6')],
         [document.getElementById('p7'),document.getElementById('p8'),document.getElementById('p9')]
-
     ]
+    atualizaTabuleiro()
+    if(quemComeca==1){ // Quem começa a jogar
+        quemComeca=0
+        quemJoga=quemComeca
+        document.getElementById('quem-comeca').innerHTML="Quem começa é o: Jogador"
+    }else{
+        quemComeca=1
+        quemJoga=quemComeca
+        document.getElementById('quem-comeca').innerHTML="Quem começa é o: Computador"
+        cpuJoga()
+    }
 }
 function atualizaTabuleiro(){
     for(var l=0; l<3; l++){
