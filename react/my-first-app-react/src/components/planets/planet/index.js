@@ -16,14 +16,12 @@ function Planet(props) {
     }
   return (
     <div onClick={()=>props.clickOnPlanet(props.name)}>
-    
+      
       {title}
       <DescriptionWithLink descricao={props.descricao} link={props.link} />
       <GrayImg img_url={props.img_url} gray={props.gray} /> 
-      <h3>Satélites:</h3>
-      <ul>
-          {satellites}
-      </ul>
+      {satellites}
+      <hr/>
     </div>
   );
 }
