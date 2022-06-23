@@ -1,37 +1,51 @@
 import React, { useState, Fragment } from 'react';
 
 
+
 const FormularioCadastro = (props) =>{
     const limparFormulario = {
         nome:'',
         idade:'',
         telefone:'',
-        endereco:''
+        endereco:'',
+        id:''
 }
     const [cadastrados,setCadastrados] = useState([])
     const [fields, setFields] = useState(limparFormulario)
+    const [idCount, setIdCount] = useState(0)
+   
 
-    
     const handleChange = (e) => setFields({
         ...fields,
-        [e.target.name]: e.target.value
+        [e.target.name]: e.target.value, id: idCount
     },[])
 
     const addCadastro = (novoCadastro) => {
-        setCadastrados([...cadastrados,novoCadastro])
-    }
-    const enviarCadastro =(e)=>{
-        e.preventDefault()
-        addCadastro(fields)
-        setFields(limparFormulario)
+        setCadastrados([...cadastrados,novoCadastro],)
         
-        console.log(fields)
-        console.log(cadastrados)
-
     }
     
+    const enviarCadastro =(e)=>{
+        e.preventDefault()
+        setIdCount(idCount + 1)
+        addCadastro(fields)
+        setFields(limparFormulario)
+        console.log(fields)
+        console.log(cadastrados)
+        console.log(idCount)
+    }
+    const removerCadastro =(e)=>{
+        let valorId = e.target.value
+        console.log(valorId)
+        let indexRemover = cadastrados.findIndex((e)=>e.id == valorId)
+        console.log(indexRemover)
+        cadastrados.splice(indexRemover,1)
+        setCadastrados([...cadastrados]) 
 
-    return(
+
+    }
+
+    return( 
         <Fragment>
             <div>
                 <h1>Cadastro de Pessoas</h1>
@@ -62,10 +76,12 @@ const FormularioCadastro = (props) =>{
                 <h3>Cadastrados:</h3>
                 <ul>
                 {cadastrados.map((cadastrados,index) =>
-                <li key={index}>Nome: {cadastrados.nome} 
+                <li key={index}>ID: {cadastrados.id}
+                <br/>Nome: {cadastrados.nome} 
                 <br/>Idade: {cadastrados.idade}
                 <br/>Telefone: {cadastrados.telefone}
                 <br/>Endereço: {cadastrados.endereco}
+                <br/><button onClick={removerCadastro} value={cadastrados.id}>Remover</button>
                 <hr/></li>
                 
         )} 
