@@ -16,8 +16,8 @@ const FormularioCadastro = (props) =>{
    
 
     const handleChange = (e) => setFields({
-        ...fields,
-        [e.target.name]: e.target.value, id: idCount
+        ...fields,id: idCount,
+        [e.target.name]: e.target.value 
     },[])
 
     const addCadastro = (novoCadastro) => {
@@ -35,9 +35,9 @@ const FormularioCadastro = (props) =>{
         console.log(idCount)
     }
     const removerCadastro =(e)=>{
-        let valorId = e.target.value
+        let valorId = parseInt(e.target.value)
         console.log(valorId)
-        let indexRemover = cadastrados.findIndex((e)=>e.id == valorId)
+        let indexRemover = cadastrados.findIndex((e)=>(parseInt(e.id) === valorId))
         console.log(indexRemover)
         cadastrados.splice(indexRemover,1)
         setCadastrados([...cadastrados]) 
