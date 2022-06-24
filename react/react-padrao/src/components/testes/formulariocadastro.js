@@ -13,7 +13,7 @@ const FormularioCadastro = (props) =>{
     const [cadastrados,setCadastrados] = useState([])
     const [fields, setFields] = useState(limparFormulario)
     const [idCount, setIdCount] = useState(0)
-   
+
 
     const handleChange = (e) => setFields({
         ...fields,id: idCount,
@@ -54,7 +54,7 @@ const FormularioCadastro = (props) =>{
             <div>
                 <form onSubmit={enviarCadastro}>
                     <label htmlFor='nome'>Nome: </label>
-                    <input id='nome' type='text' name='nome' placeholder='Insira o nome' value={fields.nome} onChange={handleChange}></input>
+                    <input id='nome' type='text' name='nome' placeholder='Insira o nome' value={fields.nome} onChange={handleChange} required></input>
                     <br/>
                     <label htmlFor='idade'>idade: </label>
                     <input id='idade' type='number' name='idade' placeholder='Insira a idade' value={fields.idade} onChange={handleChange}></input>
