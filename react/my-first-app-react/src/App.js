@@ -1,13 +1,14 @@
 import Planets from "./components/planets"
+import Rotas from "./routes"
 
 
-function App(){
+function App() {
   return (
-    <div>
-      <Planets/>
+    <div className='App'>
+      <Rotas/>
     </div>
-    
-  )
+  );
 }
+
 export default App
 
