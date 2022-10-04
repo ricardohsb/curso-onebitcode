@@ -1,0 +1,1 @@
+const ric = 1
